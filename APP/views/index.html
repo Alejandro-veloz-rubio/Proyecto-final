@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="JS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Agregar Productos</h1>
+    <form> 
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="cantidad">Cantidad:</label><br>
+        <input type="text" id="cantidad" name="cantidad"><br>
+
+        <label for="costo">Costo:</label><br>
+        <input type="text" id="costo" name="costo"><br><br>
+        <button type="button" id="btnagregar">Agregar</button>
+      </form>
+      <div id="mensaje1">
+        <div id="results1">
+        </div>
+      </div><br>
+
+       <br>
+
+      <h1>Catalogo de Productos</h1>
+      <button type="button" id="btnlistar">Ver productos</button>
+      <div id="divlistar">
+      </div>
+
+      <br>
+
+      <h1>Facturas</h1>
+      <form>
+        <label for="fecha">Fecha: </label>
+        <input id="fecha" type="date"><br><br>
+        <label for="rfc">RFC:</label>
+        <input id="rfc" type="text"><br><br>
+        <label for="products">Productos:</label>
+        <select id="products">
+        </select> 
+        <label for="cantidad2">Cantidad: </label>
+        <input type="number" id="cantidad2">
+      
+      <button type="button" id="btncarrito">Añadir al carrito</button>
+      <button type="button" id="btnventa">Calcular Costo Total</button><br><br>
+      <div id="mensaje2">
+        <div id="results2">
+        </div>
+      </div><br>
+
+      <div id="factura">
+      </div>
+
+      <label for="venta">Venta total: </label><br>
+      <input id="venta" type="number"><br><br>
+
+      <label for="iva">IVA(16%):</label><br>
+      <input  id="iva" type="number"><br><br>
+
+      <label for="costototal">Costototal:</label><br>
+      <input  id="costototal" type="number">
+
+      <button type="button" id="btnfacturar">Guardar y Facturar</button><br><br>
+      <div id="mensaje3">
+        <div id="results3">
+        </div>
+      </div>
+      </form>
+
+      <script src="JS/app.js"></script>
+</body>
+</html>
